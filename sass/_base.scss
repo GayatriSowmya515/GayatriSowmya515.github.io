@@ -56,8 +56,8 @@ Grey dark 3: #999
 :root {
     --color-black: #000000;
     // --color-primary: #eb2f64;
-     --color-secondary-1: #EC008C;
-     --color-secondary-2: #F55F44;
+    --color-secondary-1: #EC008C;
+    --color-secondary-2: #F55F44;
     // --color-primary-dark: #F48FB1;
     --color-background-1: #364F6B;
     --color-background-2: #486586;
@@ -87,7 +87,7 @@ Grey dark 3: #999
     --color-header: #fbfbff;//rgba(#f8f8ff,0.8);
   
     --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
-    --shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.07);
+    --shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.1);
   
     --line: 5px solid var(--color-line);
   }
@@ -130,19 +130,45 @@ Grey dark 3: #999
   
     min-height: 100vh;
   
- }
-   .container{
+}
+  .container{
   
     // display: none;
-       display: grid;
+      display: grid;
     
     //transition: opacity 0.5s ease-in;
     grid-column: 2/3;
-   
-     grid-template-rows: 7rem 100vh 100vh 100vh 100vh;
+  
+    grid-template-rows: 7rem 100vh 100vh 100vh 100vh;
     //  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
     //    grid-template-rows: minmax(88vh,min-content) min-content min-content 5vh;
     //  }
-   }
+  }
+
+  .sicons{
+    display: grid;
+    grid-column: 1/2;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+
+    grid-template-rows: 3fr 5rem 5rem 5rem 5rem 0.5fr;
+    height: 100vh;
+    left: 3.5rem;
+
+    &-github{
+     
+      grid-row: 2/3;
+    }
+    &-hackerearth{
+      grid-row: 3/4;
+    }
+    &-linkedin{
+      grid-row: 4/5;
+    }
+    &-codepen{
+      grid-row: 5/6;
+    }
+  }
 
 

@@ -279,8 +279,11 @@
     display: grid;
     position: relative;
     grid-template-columns: 42rem 48rem;
-    grid-template-rows: 18rem 40rem 70rem 70rem 38rem 60rem;
+    grid-template-rows: 10rem 25rem 55rem 50rem 30rem 50rem;
+    grid-row-gap: 10rem;
     &__header{
+        position: relative;
+        top: 4rem;
         grid-row: 1/2;
     }
     &__project{
@@ -293,16 +296,18 @@
             left: -4rem;
             grid-template-columns: 5rem 24rem 8rem 5rem 15rem;
             grid-template-rows: 3rem 5rem 8rem 11rem 18rem;
-            transition: all 1s;
+            //transition: all 1s ease-in-out;
             &--header{
                 grid-row: 2/3;
-                grid-column: 3/6;   
+                grid-column: 3/6;  
+                box-shadow: var(--shadow-light); 
             }
             &--img{
                 grid-row: 1/5;
                 grid-column: 1/4;
                 background-color: var(--color-background-3);
                 z-index: 1;
+                box-shadow: var(--shadow-dark);
             }
             &--description{
                 padding: 13rem 2rem 2rem 3rem;
@@ -311,15 +316,7 @@
                 background-color: var(--color-background-2);
                 font-size: 2rem;
                 color: var(--color-text-3);
-            }
-        }
-        &-1:hover{
-            &--img{
-                transform: translateX(1rem);
-            }
-            &--description{
-                transform: translateX(1rem);
-
+                box-shadow: var(--shadow-dark);
             }
         }
         &-2{
@@ -334,12 +331,14 @@
                 position: relative;
                 left: -8rem;
                 width: 130%;
+                box-shadow: var(--shadow-light);
             }
             &--img{
                 grid-row: 2/6;
                 grid-column: 3/6;
                 background-color: var(--color-background-3);
                 z-index: 1;
+                box-shadow: var(--shadow-dark);
             }
             &--description{
                 padding: 3rem 2rem 2rem 4rem;
@@ -348,6 +347,7 @@
                 background-color: var(--color-background-2);
                 font-size: 2rem;
                 color: var(--color-text-3);
+                box-shadow: var(--shadow-dark);
             }
         }
         &-3{
@@ -359,12 +359,14 @@
             &--header{
                 grid-row: 2/3;
                 grid-column: 3/5;
+                box-shadow: var(--shadow-light);
             }
             &--img{
                 grid-row: 1/5;
                 grid-column: 1/4;
                 background-color: var(--color-background-3);
                 z-index: 1;
+                box-shadow: var(--shadow-dark);
             }
             &--description{
                 grid-row: 4/6;
@@ -373,6 +375,7 @@
                 font-size: 2rem;
                 color: var(--color-text-3);
                 padding: 3rem 3rem 3rem 37rem;
+                box-shadow: var(--shadow-dark);
             }
         }
         &-4{
@@ -386,12 +389,14 @@
             &--header{
                 grid-row: 3/5;
                 grid-column: 4/6;
+                box-shadow: var(--shadow-light);
             }
             &--img{
                 grid-row: 2/6;
                 grid-column: 2/5;
                 background-color: var(--color-background-3);
                 z-index: 1;
+                box-shadow: var(--shadow-dark);
             }
             &--description{
                 grid-row: 1/4;
@@ -400,6 +405,7 @@
                 font-size: 2rem;
                 color: var(--color-text-3);
                 padding: 3rem;
+                box-shadow: var(--shadow-dark);
             }
         }
         &-5{
@@ -418,12 +424,14 @@
                 position: relative;
                 left: -7rem;
                 width: 130%;
+                box-shadow: var(--shadow-light);
             }
             &--img{
                 grid-row: 1/5;
                 grid-column: 2/5;
                 background-color: var(--color-background-3);
                 z-index: 1;
+                box-shadow: var(--shadow-dark);
             }
             &--description{
                 grid-row: 3/6;
@@ -432,6 +440,7 @@
                 font-size: 2rem;
                 color: var(--color-text-3);
                 padding: 10rem 3rem 3rem 4rem;
+                box-shadow: var(--shadow-dark);
             }
         }
     }

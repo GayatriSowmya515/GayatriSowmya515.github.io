@@ -86,6 +86,9 @@ a:visited {
 .icon{
     height: 7.5rem;
     background-color: var(--color-background-2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -103,6 +106,134 @@ a:visited {
     align-items: center;
     justify-content: center;
 }
+
+.project1{
+    .project1-header{
+        transition: all 0.3s ease-in-out;   
+    }
+    .project1-img{
+        transition: all 0.3s ease-in-out;
+    }
+    .project1-description{
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+
+.project1:hover{
+    .project1-header{
+        transform: translateX(-1rem);
+    }
+    .project1-img{
+        transform: translateX(2rem);
+    }
+    .project1-description{
+        transform: translateY(-1rem);  
+    }
+}
+
+
+.project2{
+    .project2-header{
+        transition: all 0.3s ease-in-out;   
+    }
+    .project2-img{
+        transition: all 0.3s ease-in-out;
+    }
+    .project2-description{
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+
+.project2:hover{
+    .project2-header{
+        transform: translateX(1rem);
+    }
+    .project2-img{
+        transform: translateX(-2rem);
+    }
+    .project2-description{
+        transform: translateY(1rem);  
+    }
+}
+
+.project3{
+    .project3-header{
+        transition: all 0.3s ease-in-out;   
+    }
+    .project3-img{
+        transition: all 0.3s ease-in-out;
+    }
+    .project3-description{
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+
+.project3:hover{
+    .project3-header{
+        transform: translateX(-1rem);
+    }
+    .project3-img{
+        transform: translateX(2rem);
+    }
+    .project3-description{
+        transform: translateY(-1rem);  
+    }
+}
+
+.project4{
+    .project4-header{
+        transition: all 0.3s ease-in-out;   
+    }
+    .project4-img{
+        transition: all 0.3s ease-in-out;
+    }
+    .project4-description{
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+
+.project4:hover{
+    .project4-header{
+        transform: translateX(-4rem);
+    }
+    .project4-img{
+        transform: translateX(-2rem);
+    }
+    .project4-description{
+        transform: translateY(1rem);  
+    }
+}
+
+.project5{
+    .project5-header{
+        transition: all 0.3s ease-in-out;   
+    }
+    .project5-img{
+        transition: all 0.3s ease-in-out;
+    }
+    .project5-description{
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+
+.project5:hover{
+    .project5-header{
+        transform: translateX(4rem);
+    }
+    .project5-img{
+        transform: translateX(2rem);
+    }
+    .project5-description{
+        transform: translateY(-1rem);  
+    }
+}
+
+
 
 @keyframes line-animate-1{
     from{
