@@ -1,0 +1,46 @@
+[data-scroll] {
+    transition: all 1.2s;
+}
+[data-scroll="in"]{
+    opacity: 1;
+    transform:scale(auto) translateY(0);
+}
+[data-scroll="in"]{
+    opacity: 0;
+    transform:scale(.75) translateY(50px);
+}
+
+//   .frontpage__1[data-scroll="in"]{
+//     opacity: 1;
+//     transform:scale(auto) translateY(0);
+//   }
+//   .frontpage__1[data-scroll="out"]{
+//     opacity: 0;
+//     transform:scale(.75) translateY(50px);
+//   }
+
+//   .aboutme__header[data-scroll="in"]{
+//       opacity: 1;
+//       transform: translateY(0);
+//   }
+//   .aboutme__header[data-scroll="out"]{
+//       opacity: 0;
+//       transform: translateY(-6rem);
+//   }
+
+//   .education-head[data-scroll="in"]{
+//       opacity:1;
+//       transform: translateX(0);
+//   }
+//   .education-head[data-scroll="out"]{
+//       opacity: 0;
+//       transform: translateX(5rem);
+//   }
+//   .education-context[data-scroll="in"]{
+//     opacity:1;
+//     transform: translateX(0);
+// }
+// .education-context[data-scroll="out"]{
+//     opacity: 0;
+//     transform: translateX(-5rem);
+// }

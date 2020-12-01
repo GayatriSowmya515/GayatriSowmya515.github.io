@@ -1,14 +1,30 @@
 .menubar{
     grid-row: 1/2;
+    grid-column: 1/4;
     display: grid;
-    position: relative;
-    top: 2rem;
+    position: fixed;
+    width: 100%;
+
+    padding: 2.8rem 5rem 1.8rem 5rem;
     color: var(--color-text-3);
     font-size: 2rem;
-    width: 100rem;
     justify-content: center;
     align-items: center;
     grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
+
+
+
+    backdrop-filter: blur(10px);
+    transition: all 0.3s;
+    z-index: 11;
+    transform: translateY(0px);
+    background-color: var(--color-background-1);
+   // box-shadow: var(--shadow-light);
+    filter: none !important;
+    pointer-events: auto !important;
+    user-select: auto !important;
+
+
     &-1{
         grid-column: 2/3;
     }
@@ -26,7 +42,7 @@
 
 .front{
     display: grid;
-    grid-row: 2/3;
+    grid-row: 1/2;
     grid-template-columns: 1fr 4px;
     position: relative;
     top: 2.5rem;
@@ -105,7 +121,7 @@
         align-items: center;
         height: 5.2rem;
         width : 10rem;
-        border-radius: 2px;
+        border-radius: 10px;
 
     }
 
@@ -138,7 +154,7 @@
 }
 
 .aboutme{
-    grid-row: 3/4;
+    grid-row: 2/3;
 
     display: grid;
     position: relative;
@@ -212,7 +228,7 @@
 }
 
 .myskills{
-    grid-row: 4/5;
+    grid-row: 3/4;
     display: grid;
     
     position: relative;
@@ -275,7 +291,7 @@
     }
 }
 .myprojects{
-    grid-row: 5/6;
+    grid-row: 4/5;
     display: grid;
     position: relative;
     grid-template-columns: 42rem 48rem;
@@ -383,7 +399,7 @@
             grid-column: 1/2;
             display: grid;
             position: relative;
-            left: -7rem;
+            left: -5rem;
             grid-template-columns: 5.5rem 30rem 3rem 7rem 18rem;
             grid-template-rows: 20rem 3rem 2rem 3rem 18rem;
             &--header{
