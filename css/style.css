@@ -17,14 +17,15 @@ Grey dark 3: #999
 */
 :root {
   --color-black: #000000;
-  --color-secondary-1: #EC008C;
+  --color-secondary-1: #F23CA8;
   --color-secondary-2: #F55F44;
-  --color-background-1: #364F6B;
-  --color-background-2: #486586;
+  --color-background-1: #243F57;
+  --color-background-2:#364F6B;
   --color-background-3: #C4C4C4;
+  --color-background-4: #364F6B;
   --color-text-1: #A6F0F4;
   --color-text-2: #61EAF2;
-  --color-text-3: #FFE7F2;
+  --color-text-3: #e3e7e7;
   --color-grey-light-1: #faf9f9;
   --color-grey-light-2: #f4f2f2;
   --color-grey-light-3: #f0eeee;
@@ -84,13 +85,14 @@ body {
     fill: #61EAF2; }
 
 .container {
-  display: grid;
+  display: none;
   grid-column: 2/3;
   grid-row: 2/3;
-  grid-template-rows: 100vh 100vh 100vh 100vh; }
+  grid-template-rows: repeat(4, min-content) 14rem;
+  grid-row-gap: 20rem; }
 
 .sicons {
-  display: grid;
+  display: none;
   grid-column: 1/2;
   grid-row: 2/3;
   justify-content: center;
@@ -98,7 +100,8 @@ body {
   position: fixed;
   grid-template-rows: 3fr repeat(5, 5.5rem) 0.5fr;
   height: 100vh;
-  left: 3.5rem; }
+  left: 3.5rem;
+  animation: line6 3s ease-in; }
   .sicons svg {
     transition: all 0.35s ease-out; }
   .sicons svg:hover {
@@ -126,7 +129,7 @@ body {
 .menubar {
   grid-row: 1/2;
   grid-column: 1/4;
-  display: grid;
+  display: none;
   position: fixed;
   width: 100%;
   padding: 2.8rem 5rem 1.8rem 5rem;
@@ -135,6 +138,7 @@ body {
   justify-content: center;
   align-items: center;
   grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
+  animation: line4 3s ease-out;
   backdrop-filter: blur(10px);
   transition: all 0.3s;
   z-index: 11;
@@ -158,12 +162,12 @@ body {
   grid-template-columns: 1fr 4px;
   position: relative;
   top: 2.5rem;
-  height: 41.2rem;
+  height: 41.8rem;
   width: 88rem; }
   .front-line {
     position: relative;
     top: 2.5rem;
-    height: 41.2rem;
+    height: 41.8rem;
     grid-column: 2/3;
     background-color: var(--color-line);
     animation: line-animate-3 2s linear; }
@@ -183,7 +187,8 @@ body {
     .frontpage__1-text {
       position: relative;
       top: -2rem;
-      grid-column: 1/2; }
+      grid-column: 1/2;
+      animation: line1 0.4s ease-out; }
     .frontpage__1-line {
       grid-column: 2/3;
       border-top: 4px solid var(--color-line);
@@ -192,22 +197,23 @@ body {
     position: relative;
     top: -1.5rem;
     color: var(--color-text-2);
-    font-size: 2.8rem; }
+    font-size: 2.8rem;
+    animation: line2 0.7s ease-out; }
   .frontpage__3 {
     position: relative;
     top: -1.5rem;
     color: var(--color-text-1);
     font-size: 10rem;
     position: relative;
-    left: -1rem; }
+    left: -1rem;
+    animation: line3 1.1s ease-out; }
   .frontpage__4 {
-    position: relative;
-    top: -2.5rem;
     position: relative;
     top: -0.7rem;
     color: var(--color-text-3);
-    font-size: 2rem;
-    width: 45%; }
+    font-size: 2.2rem;
+    width: 45%;
+    animation: line4 1.5s ease-out; }
   .frontpage__btn {
     position: relative;
     top: 2rem;
@@ -218,7 +224,8 @@ body {
     align-items: center;
     height: 5.2rem;
     width: 10rem;
-    border-radius: 10px; }
+    border-radius: 10px;
+    animation: line5 1.8s ease-out; }
   .frontpage__line {
     position: relative;
     display: grid;
@@ -278,9 +285,9 @@ body {
     .aboutme__container-text {
       grid-row: 1/2;
       grid-column: 2/3;
-      padding: 5.5rem 8rem;
+      padding: 7rem 8rem;
       color: var(--color-text-3);
-      font-size: 2.2rem; }
+      font-size: 2.5rem; }
     .aboutme__container-line2 {
       grid-column: 2/3;
       position: relative;
@@ -312,7 +319,7 @@ body {
     display: grid;
     padding-top: 6rem;
     position: relative;
-    left: -5rem;
+    left: -2.5rem;
     justify-content: center;
     grid-template-rows: repeat(5, 5.7rem);
     grid-template-columns: repeat(5, 8rem);
@@ -371,11 +378,13 @@ body {
     .myprojects__project-1--img {
       grid-row: 1/5;
       grid-column: 1/4;
-      background-color: var(--color-background-3);
+      background-image: url("/img/todolist.png");
+      background-position: center;
+      background-size: cover;
       z-index: 1;
       box-shadow: var(--shadow-dark); }
     .myprojects__project-1--description {
-      padding: 13rem 2rem 2rem 3rem;
+      padding: 14rem 2rem 2rem 3.5rem;
       grid-row: 4/6;
       grid-column: 2/5;
       background-color: var(--color-background-2);
@@ -398,11 +407,13 @@ body {
     .myprojects__project-2--img {
       grid-row: 2/6;
       grid-column: 3/6;
-      background-color: var(--color-background-3);
+      background-image: url("/img/weatherapp.png");
+      background-position: center;
+      background-size: cover;
       z-index: 1;
       box-shadow: var(--shadow-dark); }
     .myprojects__project-2--description {
-      padding: 3rem 2rem 2rem 4rem;
+      padding: 4rem 2rem 2rem 4rem;
       grid-row: 1/3;
       grid-column: 2/5;
       background-color: var(--color-background-2);
@@ -413,8 +424,8 @@ body {
     grid-row: 4/5;
     grid-column: 1/3;
     display: grid;
-    grid-template-columns: 20rem 22rem 10rem 20rem 20rem;
-    grid-template-rows: 5rem 5rem 8rem 17rem 8rem; }
+    grid-template-columns: 20rem 22rem 12rem 20rem 20rem;
+    grid-template-rows: 5rem 5rem 10rem 17rem 5rem; }
     .myprojects__project-3--header {
       grid-row: 2/3;
       grid-column: 3/5;
@@ -422,7 +433,9 @@ body {
     .myprojects__project-3--img {
       grid-row: 1/5;
       grid-column: 1/4;
-      background-color: var(--color-background-3);
+      background-image: linear-gradient(to right bottom, rgba(72, 101, 134, 0.15), rgba(72, 101, 134, 0.15)), url("../img/chaqua.png");
+      background-position: center;
+      background-size: cover;
       z-index: 1;
       box-shadow: var(--shadow-dark); }
     .myprojects__project-3--description {
@@ -431,7 +444,7 @@ body {
       background-color: var(--color-background-2);
       font-size: 2rem;
       color: var(--color-text-3);
-      padding: 3rem 3rem 3rem 37rem;
+      padding: 5rem 4rem 3rem 38.8rem;
       box-shadow: var(--shadow-dark); }
   .myprojects__project-4 {
     grid-row: 5/6;
@@ -448,7 +461,9 @@ body {
     .myprojects__project-4--img {
       grid-row: 2/6;
       grid-column: 2/5;
-      background-color: var(--color-background-3);
+      background-image: linear-gradient(to left bottom, rgba(72, 101, 134, 0.35), rgba(72, 101, 134, 0.2)), url("../img/calci.png");
+      background-position: center;
+      background-size: cover;
       z-index: 1;
       box-shadow: var(--shadow-dark); }
     .myprojects__project-4--description {
@@ -457,7 +472,7 @@ body {
       background-color: var(--color-background-2);
       font-size: 2rem;
       color: var(--color-text-3);
-      padding: 3rem;
+      padding: 3.5rem;
       box-shadow: var(--shadow-dark); }
   .myprojects__project-5 {
     grid-row: 6/7;
@@ -478,7 +493,9 @@ body {
     .myprojects__project-5--img {
       grid-row: 1/5;
       grid-column: 2/5;
-      background-color: var(--color-background-3);
+      background-image: linear-gradient(to right, rgba(72, 101, 134, 0.35), rgba(72, 101, 134, 0)), url("../img/tic.png");
+      background-position: center;
+      background-size: cover;
       z-index: 1;
       box-shadow: var(--shadow-dark); }
     .myprojects__project-5--description {
@@ -487,8 +504,36 @@ body {
       background-color: var(--color-background-2);
       font-size: 2rem;
       color: var(--color-text-3);
-      padding: 10rem 3rem 3rem 4rem;
+      padding: 11rem 3rem 3rem 4rem;
       box-shadow: var(--shadow-dark); }
+
+.footer {
+  grid-row: 5/6;
+  display: grid;
+  grid-template-rows: 2rem 6.5rem 2rem 3.5rem; }
+  .footer-space {
+    grid-row: 1/2; }
+  .footer-text {
+    grid-row: 2/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-text-1);
+    font-size: 1.7rem;
+    font-weight: 50; }
+  .footer-icon {
+    grid-row: 3/4;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .footer-icon svg {
+      transition: all 0.35s ease-out; }
+    .footer-icon svg:hover {
+      fill: var(--color-text-2);
+      cursor: pointer;
+      transform: translateY(-3px); }
+  .footer-space1 {
+    grid-row: 4/5; }
 
 .btn {
   background: #bc4e9c;
@@ -565,7 +610,7 @@ a:visited {
 
 .icon {
   height: 7.5rem;
-  background-color: var(--color-background-2);
+  background-color: var(--color-background-4);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -575,7 +620,7 @@ a:visited {
   overflow: hidden; }
 
 .icon:hover {
-  transform: translateY(-8px); }
+  transform: translateY(-8px) scale(1.05, 1.05); }
 
 .add-shadow {
   box-shadow: var(--shadow-light); }
@@ -592,6 +637,172 @@ a:visited {
   display: flex;
   align-items: center;
   justify-content: center; }
+
+.github {
+  position: relative;
+  left: 24rem;
+  fill: var(--color-text-3); }
+  .github svg {
+    transition: all 0.35s ease-out;
+    cursor: pointer; }
+  .github svg:hover {
+    fill: var(--color-text-2);
+    transform: translateY(-5px) scale(1.05, 1.05); }
+
+.preload {
+  display: grid;
+  grid-column: 1/3;
+  grid-row: 1/2; }
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: dash1 1.4s linear forwards; }
+
+@keyframes dash1 {
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+[data-scroll] {
+  transition: all 1.2s; }
+
+[data-scroll="in"] {
+  opacity: 1;
+  transform: scale(auto) translateY(0); }
+
+[data-scroll="in"] {
+  opacity: 0;
+  transform: scale(0.75) translateY(50px); }
+
+@keyframes line-animate-1 {
+  from {
+    width: 0; }
+  to {
+    width: 100%; } }
+
+@keyframes line-animate-2 {
+  0% {
+    width: 300%; }
+  34% {
+    width: 300%; }
+  65% {
+    width: 300%; }
+  100% {
+    width: 100%; } }
+
+@keyframes line-animate-3 {
+  0% {
+    height: 0; }
+  50% {
+    height: 0; }
+  100% {
+    height: 41.30rem; } }
+
+@keyframes animate-line1 {
+  0% {
+    width: 57rem; }
+  100% {
+    width: 0; } }
+
+@keyframes animate-line3 {
+  0% {
+    height: 0; }
+  50% {
+    height: 0; }
+  100% {
+    height: 32.6rem; } }
+
+@keyframes animate-line2 {
+  0% {
+    width: 0; }
+  34% {
+    width: 0; }
+  65% {
+    width: 0; }
+  100% {
+    width: 35rem; } }
+
+@keyframes line1 {
+  0% {
+    opacity: 0;
+    transform: translateY(2rem); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+@keyframes line2 {
+  0% {
+    opacity: 0; }
+  20% {
+    opacity: 0;
+    transform: translateY(2rem); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+@keyframes line3 {
+  0% {
+    opacity: 0; }
+  20% {
+    opacity: 0; }
+  40% {
+    opacity: 0;
+    transform: translateY(2rem); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+@keyframes line4 {
+  0% {
+    opacity: 0; }
+  20% {
+    opacity: 0; }
+  40% {
+    opacity: 0; }
+  60% {
+    opacity: 0;
+    transform: translateY(2rem); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+@keyframes line5 {
+  0% {
+    opacity: 0; }
+  20% {
+    opacity: 0; }
+  40% {
+    opacity: 0; }
+  60% {
+    opacity: 0; }
+  80% {
+    opacity: 0;
+    transform: translateY(2rem); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+@keyframes line6 {
+  0% {
+    opacity: 0; }
+  16% {
+    opacity: 0; }
+  32% {
+    opacity: 0; }
+  48% {
+    opacity: 0; }
+  64% {
+    opacity: 0; }
+  80% {
+    opacity: 0;
+    transform: translateY(2rem); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
 
 .project1 .project1-header {
   transition: all 0.4s ease-in-out; }
@@ -682,51 +893,3 @@ a:visited {
 
 .project5:hover .project5-description {
   transform: translateY(-1rem); }
-
-@keyframes line-animate-1 {
-  from {
-    width: 0; }
-  to {
-    width: 100%; } }
-
-@keyframes line-animate-2 {
-  0% {
-    width: 300%; }
-  34% {
-    width: 300%; }
-  65% {
-    width: 300%; }
-  100% {
-    width: 100%; } }
-
-@keyframes line-animate-3 {
-  0% {
-    height: 0; }
-  50% {
-    height: 0; }
-  100% {
-    height: 41.30rem; } }
-
-@keyframes animate-line1 {
-  0% {
-    width: 57rem; }
-  100% {
-    width: 0; } }
-
-@keyframes animate-line3 {
-  0% {
-    height: 0; }
-  50% {
-    height: 0; }
-  100% {
-    height: 32.6rem; } }
-
-@keyframes animate-line2 {
-  0% {
-    width: 0; }
-  34% {
-    width: 0; }
-  65% {
-    width: 0; }
-  100% {
-    width: 35rem; } }

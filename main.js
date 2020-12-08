@@ -1,4 +1,8 @@
-ScrollOut();
+//ScrollOut();
+
+
+
+
 
 
 
@@ -84,5 +88,37 @@ window.onscroll = function () {
         btn[0].style.display = "none";
     }
 }
+
+
+
+/////////////////////////////////loader///////////////////////////////////////////
+
+
+window.addEventListener('load', () => {
+    init();
+
+
+});
+
+const loader = document.querySelector('.preload');
+const main = document.querySelector('.container');
+const icons = document.querySelector(".sicons");
+const menu = document.querySelector(".menubar");
+
+function init() {
+    setTimeout(() => {
+        loader.style.display = 'none';
+        loader.style.opacity = 0;
+
+        main.style.display = 'grid';
+        icons.style.display = 'grid';
+        menu.style.display = 'grid';
+        setTimeout(() => (main.style.opacity = 1), 50);
+        AOS.init();
+    }, 1400);
+
+
+}
+
 
 
