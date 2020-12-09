@@ -105,6 +105,7 @@ const main = document.querySelector('.container');
 const icons = document.querySelector(".sicons");
 const menu = document.querySelector(".menubar");
 
+
 function init() {
     setTimeout(() => {
         loader.style.display = 'none';
@@ -115,6 +116,13 @@ function init() {
         menu.style.display = 'grid';
         setTimeout(() => (main.style.opacity = 1), 50);
         AOS.init();
+        if (window.screen.width <= 700) {
+            icons.style.display = 'none';
+            menu.style.display = 'none';
+            console.log(window.screen.width);
+        }
+
+        console.log(window.screen.width);
     }, 1400);
 
 

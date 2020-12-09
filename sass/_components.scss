@@ -93,6 +93,19 @@ a:visited {
     transition: all 0.3s ease-out;
     cursor: pointer;
     overflow: hidden;
+
+    @media only screen and (max-width: $bp-large) {
+        svg{
+            height: 40px;
+            width: 40px;
+        }
+    }
+    @media only screen and (max-width: $bp-small) {
+        svg{
+            height: 30px;
+            width: 30px;
+        }
+    }
 }
 .icon:hover{
     transform: translateY(-8px) scale(1.05,1.05);
@@ -107,11 +120,15 @@ a:visited {
 .header{
     color: var(--color-text-1);
     font-size: 6rem;
+    @media only screen and (max-width: $bp-small) {
+        position: relative;
+        left: 8rem;
+    }
 }
 
 .p-header{
     background-color: var(--color-background-2);
-    font-size: 4rem;
+    font-size: 3.5rem;
     color: var(--color-text-3);
     z-index: 2;
     display: flex;
@@ -132,6 +149,13 @@ a:visited {
         fill: var(--color-text-2);
         transform: translateY(-5px) scale(1.05,1.05);
     }
+    @media only screen and (max-width: $bp-small) {
+        left: 32rem;
+        svg{
+            width: 20px;
+            height: 20px;
+        }
+    }
 }
 
 .preload{
@@ -147,6 +171,12 @@ a:visited {
     left: 50%;
     transform: translate(-50%,-50%);
     animation: dash1 1.4s linear forwards;
+    @media only screen and (max-width: $bp-small) {
+        svg{
+            width: 80px;
+            height: 80px;
+        }
+    }
 }
 
 @keyframes dash1{

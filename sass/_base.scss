@@ -1,64 +1,8 @@
-/*
-COLORS
-
-Primary: #eb2f64
-Primary light: #FF3366
-Primary dark: #BA265D
-
-Grey light 1: #faf9f9
-Grey light 2: #f4f2f2
-Grey light 3: #f0eeee
-Grey light 4: #ccc
-
-Grey dark 1: #333
-Grey dark 2: #777
-Grey dark 3: #999
-
-*/
-//COLORS
-// $color-primary: #55c57a;
-// $color-primary-light: #7ed56f;
-// $color-primary-dark: #28b485;
-// $color-grey-light-1: #f7f7f7;
-
-// $color-secondary-light: #ffb900;
-// $color-secondary-dark: #ff7730;
-
-// $color-tertiary-light:#3F51B5;
-// $color-tertiary-dark:#1A237E;
-
-// $color-gray-light-1: #f7f7f7;
-// $color-grey-light-2: #eee;
-
-// $color-grey-dark: #777;
-// $color-grey-dark-2: #999;
-// $color-grey-dark-3: #333;
-
-// $color-white: #fff;
-// $color-black: #000;
-
-// //FONT
-// $default-font-size: 1.6rem;
-
-// //GRID
-// $grid-width: 114rem;
-// $gutter-vertical: 8rem;
-// $gutter-vertical-small: 6rem;
-// $gutter-horizontal: 6rem;
-
-// $color-background-2 : #f8f8ff;
-// $color-background-1 : #12A4D9;//#df6190;
-// $color-background-3 : #d9138a;//#EABFbb;
-// $color-background-4 : #e2d810;//#FF9E80;
-// $color-background-5 : #df6190;
-
 
 :root {
     --color-black: #000000;
-    // --color-primary: #eb2f64;
     --color-secondary-1: #F23CA8;
     --color-secondary-2: #F55F44;
-    // --color-primary-dark: #F48FB1;
     --color-background-1: #243F57;//#2E4560;//#364F6B;
     --color-background-2:#364F6B;// #486586;
     --color-background-3: #C4C4C4;
@@ -78,14 +22,6 @@ Grey dark 3: #999
     --color-grey-dark-3: #999;
 
     --color-line: #578B8E;
-
-    // --color-background-2 : #f8f8ff;
-    // --color-background-1 : #12A4D9;//#df6190;
-    // --color-background-3 : #d9138a;//#EABFbb;
-    // --color-background-4 :#FFCA28;//#FF9E80;
-    // --color-background-5 : #df6190;
-
-    --color-header: #fbfbff;//rgba(#f8f8ff,0.8);
   
     --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
     --shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.15);
@@ -93,11 +29,12 @@ Grey dark 3: #999
     --line: 5px solid var(--color-line);
   }
   
-  $bp-largest: 75em; //1200px
+  $bp-largest: 106.25em; //1700px
+  $bp-larger: 93.75em; //1500px
   $bp-large: 68.75em; //1100px
   $bp-medium: 56.25em; //900px
   $bp-small: 37.4em; //600px
-  $bp-smallest: 31.25em; //500px
+  $bp-smallest: 25em; //400px
   
   * {
     margin: 0;
@@ -111,11 +48,22 @@ Grey dark 3: #999
   
   html {
     box-sizing: border-box;
-    font-size: 62.5%; //1rem = 10px, 10px/16px = 62.5%
-  
-    @media only screen and (max-width: $bp-large) {
-      font-size: 50%; // 8/16 = 50%
+    font-size: 75%; //1rem = 12px, 12px/16px = 75%
+    
+    @media only screen and (max-width: $bp-larger) {
+      font-size: 62.5%; //1rem = 10px, 10px/16px = 62.5%
     }
+    @media only screen and (max-width: $bp-large) {
+      font-size: 37.5%; // 1rem = 8px,   8/16 = 50%
+    }
+    @media only screen and (max-width: $bp-smallest) {
+      font-size: 30%; // 1rem = 8px,   8/16 = 50%
+    }
+    
+    // @media only screen and (max-width: $bp-small) {
+    //   font-size: 50%; // 8/16 = 50%
+    // }
+    
   }
   
   body {
@@ -124,14 +72,17 @@ Grey dark 3: #999
     font-weight: 400;
     line-height: 1.6;
     background-color: var(--color-background-1);
-    width: 100%;
     display: grid;
-
-    grid-template-columns: 1.2fr 90rem 1fr;
+    overflow-x: hidden;
+    
     grid-template-rows: 6.5rem 1fr;
-  
-    min-height: 100vh;
-  
+    grid-template-columns: 1.3fr 90rem 1fr;
+    @media only screen and (max-width: 700px) {
+      grid-template-columns: 1fr 80rem 1fr;
+    }
+    
+
+    
 }
 
 .arrow-btn{
@@ -154,18 +105,17 @@ Grey dark 3: #999
     transform: translateY(-1.4rem);
     fill: #61EAF2;
   }
+  @media only screen and (max-width: $bp-medium) {
+    display: none;
+  }
 }
   .container{
   
-    // display: none;
-      display: none;
-    
-    //transition: opacity 0.5s ease-in;
+    display: none;
     grid-column: 2/3;
     grid-row: 2/3;
-  
     grid-template-rows: repeat(4,min-content) 14rem;
-    grid-row-gap: 20rem;
+    grid-row-gap: 25rem;
     //  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
     //    grid-template-rows: minmax(88vh,min-content) min-content min-content 5vh;
     //  }
@@ -179,6 +129,7 @@ Grey dark 3: #999
     align-items: center;
     position: fixed;
     grid-template-rows: 3fr repeat(5,5.5rem) 0.5fr;
+    
     height: 100vh;
     left: 3.5rem;
     animation: line6 3s ease-in;
@@ -189,37 +140,72 @@ Grey dark 3: #999
       fill: var(--color-text-2);
       transform: translateY(-6px); 
     }
+    @media only screen and (max-width: $bp-medium) {
+      grid-template-rows: 3fr repeat(5,6.5rem) 0.5fr;
+      svg{
+          width: 23px;
+          height: 23px;
+      }
+    }
+
+    @media only screen and (max-width: 700px) {
+      grid-column: 1/4;
+      position: absolute;
+      bottom: 2rem;
+    }
 
     &-github{
       position: relative;
       left: 1px;
       grid-row: 2/3;  
+      @media only screen and (max-width: $bp-medium) {
+        left: 3px;
+      }
+  
     }
     
     &-hackerearth{
       position: relative;
       left: 2px;
       grid-row: 3/4;
+      @media only screen and (max-width: $bp-medium) {
+        left: 4px;
+        svg{
+          width: 20px;
+          height: 20px;
+        }
+      }
+    
     }
 
 
     &-linkedin{
+      position: relative;
       grid-row: 4/5;
+      @media only screen and (max-width: $bp-medium) {
+        left: 3px;
+      }
+    
     }
 
     &-codepen{
       position: relative;
       left: -1px;
       grid-row: 5/6;
+      @media only screen and (max-width: $bp-medium) {
+        left: 3px;
+      }
+  
     }
 
     &-hackerrank{
       position: relative;
       left: -3px;
       grid-row: 6/7;
+      @media only screen and (max-width: $bp-medium) {
+        left: 2px;
+      }
     }
   }
-
-
 
 
