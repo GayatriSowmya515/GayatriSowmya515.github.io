@@ -627,7 +627,7 @@ body {
     .myprojects__project-5--img {
       grid-row: 1/5;
       grid-column: 2/5;
-      background-image: linear-gradient(to right, rgba(72, 101, 134, 0.35), rgba(72, 101, 134, 0)), url("../img/tic.png");
+      background-image: linear-gradient(to right, rgba(72, 101, 134, 0.35), rgba(72, 101, 134, 0.1)), url("../img/tic.png");
       background-position: center;
       background-size: cover;
       z-index: 1;
