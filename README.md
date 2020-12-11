@@ -2,9 +2,9 @@
 
 <div align="center"><h3>👩 A single page, static, animated portfolio website built using sass and javascript.</h3></div>
 <br>
-<div align="center"><img src="(https://drive.google.com/uc?export=view&id=1yfBiUC63h6Ue6QOKPvIdKuOzNLY9Pli5"></div>
+<div align="center"><img src="(https://drive.google.com/uc?export=view&id=1yfBiUC63h6Ue6QOKPvIdKuOzNLY9Pli5" height="400"/></div>
 <br>
-<div align="center"><h3>Check it out here: [gayatrisowmya515.github.io](https://gayatrisowmya515.github.io/)</h3></div>
+<div align="center"><h3>Check it out here: ![gayatrisowmya515.github.io](https://gayatrisowmya515.github.io/)</h3></div>
 
 <br>
 
