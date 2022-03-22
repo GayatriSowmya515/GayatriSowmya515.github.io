@@ -1060,3 +1060,11 @@ a:visited {
 
 .project5:hover .project5-description {
   transform: translateY(-1rem); }
+
+
+.skill_img {
+  max-width: 70%;
+  max-height: 70%;
+  display:block;
+  margin:auto;
+}

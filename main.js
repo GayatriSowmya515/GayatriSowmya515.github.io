@@ -1,12 +1,55 @@
 //ScrollOut();
 
+function loadDetails(details) {
 
+    // console.log(details)
+    for (const detail in details) {
+        if(detail == 'projects'){
+            loadProjects(details[detail]);
+        }
+        else if(detail == 'social_profiles'){
+            loadProfiles(details[detail]);
+        }
+        else if(detail == 'skills'){
+            loadSkills(details[detail]);
+        }
+        else if(detail == 'resume'){
+            loadResume(details[detail]);
+        }
+        else{
+            var div = document.getElementById(detail);
+            div.innerHTML = details[detail];
+        }
 
+    };
 
+}
 
+function loadJSON(path, success, error)
+{
+    var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function()
+    {
+        if (xhr.readyState === XMLHttpRequest.DONE) {
+            if (xhr.status === 200) {
+                if (success)
+                 
+                    loadDetails(JSON.parse(xhr.responseText));
+            } else {
+                if (error)
+                    error(xhr);
+            }
+        }
+    };
+    xhr.open("GET", path, true);
+    xhr.send();
+}
 
-
-/////////////Scroll ////////////////////////////
+const object = loadJSON('details.json',
+         function(data) {},
+         function(xhr) { console.error(xhr); }
+);
+/////////////////////////
 
 function smoothScroll(target, duration) {
     var target = document.querySelector(target);

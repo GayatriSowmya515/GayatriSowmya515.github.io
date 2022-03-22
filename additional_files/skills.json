@@ -1,0 +1,47 @@
+{
+    "Django" : {
+        "website" : "http://www.djangoproject.com",
+        "description" : "Django is a high-level Python Web framework that encourages rapid development and clean, pragmatic design.",
+        "logo_path" : "img/skills_logos/django-logo.png"
+    },
+    "Python" : {
+        "website" : "http://www.python.org",
+        "description" : "Python is a programming language that lets you work quickly and integrate systems more effectively.",
+        "logo_path" : "img/skills_logos/python-logo.png"
+    },
+    "Java" : {
+        "website" : "http://www.java.com",
+        "description" : "Java is a general-purpose computer programming language that is concurrent, class-based, object-oriented, and specifically designed to have as few implementation dependencies as possible.",
+        "logo_path" : "img/skills_logos/java-logo.png"
+    },
+    "JavaScript" : {
+        "website" : "http://www.javascript.com",
+        "description" : "JavaScript is a high-level, dynamic, untyped, and interpreted programming language.",
+        "logo_path" : "img/skills_logos/javascript-logo.png"
+    },
+    "SASS" : {
+        "website" : "http://sass-lang.com",
+        "description" : "Sass is a language that lets you add structure to your CSS files.",
+        "logo_path" : "img/skills_logos/sass-logo.png"
+    },
+    "MongoDB" : {
+        "website" : "http://www.mongodb.org",
+        "description" : "MongoDB is a document-oriented database program.",
+        "logo_path" : "img/skills_logos/mongodb-logo.png"
+    },
+    "C++" : {
+        "website" : "http://www.cplusplus.com",
+        "description" : "C++ is a general-purpose programming language.",
+        "logo_path" : "img/skills_logos/cpp-logo.png"
+    },
+    "C" : {
+        "website" : "http://www.cprogramming.com",
+        "description" : "C is a general-purpose, imperative computer programming language.",
+        "logo_path" : "img/skills_logos/c-logo.png"
+    },
+    "Node.js" : {
+        "website" : "http://nodejs.org",
+        "description" : "Node.js is an open-source, cross-platform JavaScript run-time environment that executes JavaScript code outside of a web browser.",
+        "logo_path" : "img/skills_logos/nodejs-logo.png"
+    }
+}
