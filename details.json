@@ -2,7 +2,7 @@
 {
     "title-name"    : "JS",
     "display-name"  : "Gayatri Sowmya",
-    "tagline"       : "A student who loves exploring emerging technologies.",
+    "tagline"       : "I love exploring emerging technologies.",
     "about-me"      : "I'm currently on my Fifth year of Computer Science and Engineering at JNTUHUCEH. \nI love to explore new technologies and passionate about Programming and Web Development.",
     "resume"        : "https://drive.google.com/file/d/1Zg_qLDQzOObEJEug_JswmxRnnfwQVOjI/view?usp=sharing",
     "projects"      : [
@@ -14,12 +14,12 @@
         {
             "s_no"  : 2,
             "url"   : "https://github.com/GayatriSowmya515/TicTacToe",
-            "img"   : "img/project_imgs/tic.png"
+            "img"   : "img/project_imgs/tic.PNG"
         },
         {
             "s_no"  : 3,
             "url"   : "https://github.com/Coding-Club-JNTUHCEH/CC_coding_practice",
-            "img"   : "img/project_imgs/CodingClub.png"
+            "img"   : "img/project_imgs/CodingCLub.PNG"
         },
         {
             "s_no"  : 4,
