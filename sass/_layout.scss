@@ -396,6 +396,7 @@
                 grid-row: 2/3;
                 grid-column: 3/6;  
                 box-shadow: var(--shadow-light); 
+                border-radius: 0.5rem;
             }
             &--img{
                 grid-row: 1/5;
@@ -405,6 +406,7 @@
                 background-size: cover;
                 z-index: 1;
                 box-shadow: var(--shadow-dark);
+                border-radius: 0.8rem;
             }
             &--description{
                 padding: 14rem 2rem 2rem 3.5rem;
@@ -414,6 +416,7 @@
                 font-size: 2rem;
                 color: var(--color-text-3);
                 box-shadow: var(--shadow-dark);
+                border-radius: 0.8rem;
                 
             }
         }
@@ -434,6 +437,7 @@
                 left: -9rem;
                 width: 130%;
                 box-shadow: var(--shadow-light);
+                border-radius: 0.5rem;
             }
             &--img{
                 grid-row: 2/6;
@@ -443,6 +447,7 @@
                 background-size: cover;
                 z-index: 1;
                 box-shadow: var(--shadow-dark);
+                border-radius: 0.8rem;
             }
             &--description{
                 padding: 4rem 2rem 2rem 4rem;
@@ -452,6 +457,7 @@
                 font-size: 2rem;
                 color: var(--color-text-3);
                 box-shadow: var(--shadow-dark);
+                border-radius: 0.8rem;
                 @media only screen and (max-width: $bp-small) {
                     padding: 5rem 3rem 3rem 4.5rem;
                 }
@@ -472,6 +478,7 @@
                 grid-row: 2/3;
                 grid-column: 3/5;
                 box-shadow: var(--shadow-light);
+                border-radius: 0.5rem;
             }
             &--img{
                 grid-row: 1/5;
@@ -486,6 +493,7 @@
                 background-size: cover;
                 z-index: 1;
                 box-shadow: var(--shadow-dark);
+                border-radius: 0.8rem;
             }
             &--description{
                 grid-row: 4/6;
@@ -495,6 +503,7 @@
                 font-size: 2rem;
                 color: var(--color-text-3);
                 padding: 5rem 4rem 3rem 38.8rem;
+                border-radius: 0.8rem;
                 @media only screen and (max-width: $bp-small) {
                     grid-column: 2/6;
                     padding: 13rem 4rem 3rem 4rem;
@@ -523,6 +532,7 @@
                     
                 }
                 box-shadow: var(--shadow-light);
+                border-radius: 0.5rem;
             }
             &--img{
                 grid-row: 2/6;
@@ -536,6 +546,7 @@
                 background-size: cover;
                 z-index: 1;
                 box-shadow: var(--shadow-dark);
+                border-radius: 0.8rem;
             }
             &--description{
                 grid-row: 1/4;
@@ -549,6 +560,7 @@
                 color: var(--color-text-3);
                 padding: 3.5rem;
                 box-shadow: var(--shadow-dark);
+                border-radius: 0.8rem;
                 @media only screen and (max-width: $bp-small) {
                     .github{
                         position: relative;
@@ -580,6 +592,7 @@
                 left: -7rem;
                 width: 130%;
                 box-shadow: var(--shadow-light);
+                border-radius: 0.5rem;
             }
             &--img{
                 grid-row: 1/5;
@@ -594,6 +607,7 @@
 
                 z-index: 1;
                 box-shadow: var(--shadow-dark);
+                border-radius: 0.8rem;
             }
             &--description{
                 grid-row: 3/6;
@@ -607,6 +621,7 @@
                 color: var(--color-text-3);
                 padding: 11rem 3rem 3rem 4rem;
                 box-shadow: var(--shadow-dark);
+                border-radius: 0.8rem;
             }
         }
     }

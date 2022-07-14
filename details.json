@@ -1,43 +1,57 @@
 
 {
     "title-name"    : "JS",
-    "display-name"  : "Sowmya",
+    "display-name"  : "Gayatri Sowmya",
     "tagline"       : "A student who loves exploring emerging technologies.",
-    "about-me"      : "I'm currently on my Third year of Computer Science and Engineering at JNTUHCEH. \nI love to explore new technologies and passionate about Programming and Web Development.",
-    "resume"        : "https://drive.google.com/file/d/1RpY7-X2XbRUf_blueVNNBLohrxneJjEw/view",
+    "about-me"      : "I'm currently on my Fifth year of Computer Science and Engineering at JNTUHUCEH. \nI love to explore new technologies and passionate about Programming and Web Development.",
+    "resume"        : "https://drive.google.com/file/d/1Zg_qLDQzOObEJEug_JswmxRnnfwQVOjI/view?usp=sharing",
     "projects"      : [
         {
             "s_no"  : 1,
-            "url"   : "https://github.com/jaya-shankar/Human-Development-Prediction",
-            "img"   : "img/todolist.png"
+            "url"   : "https://github.com/GayatriSowmya515/ChaQua",
+            "img"   : "img/project_imgs/chaqua.png"
         },
-    
         {
             "s_no"  : 2,
-            "url"   : "https://github.com/jaya-shankar/NoteTaker_chrome-extension",
+            "url"   : "https://github.com/GayatriSowmya515/TicTacToe",
+            "img"   : "img/project_imgs/tic.png"
+        },
+        {
+            "s_no"  : 3,
+            "url"   : "https://github.com/Coding-Club-JNTUHCEH/CC_coding_practice",
+            "img"   : "img/project_imgs/CodingClub.png"
+        },
+        {
+            "s_no"  : 4,
+            "url"   : "https://github.com/GayatriSowmya515/Calculator",
             "img"   : "img/project_imgs/calci.png"
+        },
+        {
+            "s_no"  : 5,
+            "url"   : "https://github.com/GayatriSowmya515/weather-app",
+            "img"   : "img/project_imgs/weatherapp.png"
         }],
 
     "social_profiles" : [
             {
                 "title" : "Github",
-                "url"   : "https://github.com/jaya-shankar"
+                "url"   : "https://github.com/GayatriSowmya515"
             },
             {
                 "title" : "LinkedIn",
-                "url"   : "https://www.linkedin.com/in/jaya-shankar-bandaru/"
+                "url"   : "https://www.linkedin.com/in/gayatri-sowmya-667b311b7"
             },
             {
                 "title" : "HackerRank",
-                "url"   : "https://www.linkedin.com/in/jaya-shankar-bandaru/"
+                "url"   : "https://www.hackerrank.com/__sowmya515__"
             },
             {
                 "title" : "CodePen",
-                "url"   : "https://www.linkedin.com/in/jaya-shankar-bandaru/"
+                "url"   : "https://codepen.io/gayatrisowmya"
             },
             {
                 "title" : "HackerEarth",
-                "url"   : "https://www.linkedin.com/in/jaya-shankar-bandaru/"
+                "url"   : "https://www.hackerearth.com/@gayathrisowmya515"
             }
 
         ],

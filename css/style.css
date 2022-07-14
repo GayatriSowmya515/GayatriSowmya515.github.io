@@ -473,7 +473,8 @@ body {
     .myprojects__project-1--header {
       grid-row: 2/3;
       grid-column: 3/6;
-      box-shadow: var(--shadow-light); }
+      box-shadow: var(--shadow-light);
+      border-radius: 0.5rem; }
     .myprojects__project-1--img {
       grid-row: 1/5;
       grid-column: 1/4;
@@ -481,7 +482,8 @@ body {
       background-position: center;
       background-size: cover;
       z-index: 1;
-      box-shadow: var(--shadow-dark); }
+      box-shadow: var(--shadow-dark);
+      border-radius: 0.8rem; }
     .myprojects__project-1--description {
       padding: 14rem 2rem 2rem 3.5rem;
       grid-row: 4/6;
@@ -489,7 +491,8 @@ body {
       background-color: var(--color-background-2);
       font-size: 2rem;
       color: var(--color-text-3);
-      box-shadow: var(--shadow-dark); }
+      box-shadow: var(--shadow-dark);
+      border-radius: 0.8rem; }
   .myprojects__project-2 {
     grid-row: 3/4;
     grid-column: 2/3;
@@ -506,7 +509,8 @@ body {
       position: relative;
       left: -9rem;
       width: 130%;
-      box-shadow: var(--shadow-light); }
+      box-shadow: var(--shadow-light);
+      border-radius: 0.5rem; }
     .myprojects__project-2--img {
       grid-row: 2/6;
       grid-column: 3/6;
@@ -514,7 +518,8 @@ body {
       background-position: center;
       background-size: cover;
       z-index: 1;
-      box-shadow: var(--shadow-dark); }
+      box-shadow: var(--shadow-dark);
+      border-radius: 0.8rem; }
     .myprojects__project-2--description {
       padding: 4rem 2rem 2rem 4rem;
       grid-row: 1/3;
@@ -522,7 +527,8 @@ body {
       background-color: var(--color-background-2);
       font-size: 2rem;
       color: var(--color-text-3);
-      box-shadow: var(--shadow-dark); }
+      box-shadow: var(--shadow-dark);
+      border-radius: 0.8rem; }
       @media only screen and (max-width: 37.4em) {
         .myprojects__project-2--description {
           padding: 5rem 3rem 3rem 4.5rem; } }
@@ -540,15 +546,17 @@ body {
     .myprojects__project-3--header {
       grid-row: 2/3;
       grid-column: 3/5;
-      box-shadow: var(--shadow-light); }
+      box-shadow: var(--shadow-light);
+      border-radius: 0.5rem; }
     .myprojects__project-3--img {
       grid-row: 1/5;
       grid-column: 1/4;
-      background-image: linear-gradient(to right bottom, rgba(72, 101, 134, 0.15), rgba(72, 101, 134, 0.15)), url("../img/chaqua.png");
+      background-image: linear-gradient(to right bottom, rgba(72, 101, 134, 0.15), rgba(72, 101, 134, 0.15));
       background-position: center;
       background-size: cover;
       z-index: 1;
-      box-shadow: var(--shadow-dark); }
+      box-shadow: var(--shadow-dark);
+      border-radius: 0.8rem; }
     .myprojects__project-3--description {
       grid-row: 4/6;
       grid-column: 2/6;
@@ -556,6 +564,7 @@ body {
       font-size: 2rem;
       color: var(--color-text-3);
       padding: 5rem 4rem 3rem 38.8rem;
+      border-radius: 0.8rem;
       box-shadow: var(--shadow-dark); }
       @media only screen and (max-width: 37.4em) {
         .myprojects__project-3--description {
@@ -576,7 +585,8 @@ body {
     .myprojects__project-4--header {
       grid-row: 3/5;
       grid-column: 4/6;
-      box-shadow: var(--shadow-light); }
+      box-shadow: var(--shadow-light);
+      border-radius: 0.5rem; }
       @media only screen and (max-width: 37.4em) {
         .myprojects__project-4--header {
           grid-column: 3/6; } }
@@ -587,7 +597,8 @@ body {
       background-position: center;
       background-size: cover;
       z-index: 1;
-      box-shadow: var(--shadow-dark); }
+      box-shadow: var(--shadow-dark);
+      border-radius: 0.8rem; }
     .myprojects__project-4--description {
       grid-row: 1/4;
       grid-column: 1/3;
@@ -595,7 +606,8 @@ body {
       font-size: 2rem;
       color: var(--color-text-3);
       padding: 3.5rem;
-      box-shadow: var(--shadow-dark); }
+      box-shadow: var(--shadow-dark);
+      border-radius: 0.8rem; }
       @media only screen and (max-width: 37.4em) {
         .myprojects__project-4--description {
           grid-column: 1/4; } }
@@ -620,7 +632,8 @@ body {
       position: relative;
       left: -7rem;
       width: 130%;
-      box-shadow: var(--shadow-light); }
+      box-shadow: var(--shadow-light);
+      border-radius: 0.5rem; }
       @media only screen and (max-width: 37.4em) {
         .myprojects__project-5--header {
           grid-column: 1/4; } }
@@ -631,7 +644,8 @@ body {
       background-position: center;
       background-size: cover;
       z-index: 1;
-      box-shadow: var(--shadow-dark); }
+      box-shadow: var(--shadow-dark);
+      border-radius: 0.8rem; }
     .myprojects__project-5--description {
       grid-row: 3/6;
       grid-column: 4/6;
@@ -639,7 +653,8 @@ body {
       font-size: 2rem;
       color: var(--color-text-3);
       padding: 11rem 3rem 3rem 4rem;
-      box-shadow: var(--shadow-dark); }
+      box-shadow: var(--shadow-dark);
+      border-radius: 0.8rem; }
       @media only screen and (max-width: 37.4em) {
         .myprojects__project-5--description {
           grid-column: 3/6; } }
@@ -811,6 +826,13 @@ a:visited {
       .github svg {
         width: 20px;
         height: 20px; } }
+
+.skill_img {
+  height: 60%;
+  width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
 
 .preload {
   display: grid;
@@ -1060,11 +1082,3 @@ a:visited {
 
 .project5:hover .project5-description {
   transform: translateY(-1rem); }
-
-
-.skill_img {
-  max-width: 70%;
-  max-height: 70%;
-  display:block;
-  margin:auto;
-}
